@@ -227,7 +227,7 @@ app.get('/members', (req,res) => {
       res.redirect('/login');
   } else {
     var username = req.session.username;
-    var imageIndex = Math.floor(Math.random() * 3) + 1;
+    var imageIndex = Math.floor(Math.random() * 2) + 1;
     var imagePath = `Cute${imageIndex}.gif`;
     var html = `
     <h1>Hello, ${username}!</h1>
